@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="co.com.bancolombia.operacionespruebasunitarias.UtilidadesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-13T23:31:56" hostname="DESKTOP-Q58IVNM" time="0.11">
+  <properties/>
+  <testcase name="esPrimoVerdaderoValor0()" classname="co.com.bancolombia.operacionespruebasunitarias.UtilidadesTest" time="0.11"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

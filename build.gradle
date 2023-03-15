@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'jacoco'
+    id 'info.solidsoft.pitest' version '1.7.4'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(platform('org.junit:junit-bom:5.9.2'))
+    testImplementation('org.junit.jupiter:junit-jupiter')
+}
+
+pitest {
+    targetClasses = ['co.com.bancolombia.*']  //by default "${project.group}.*"
+    threads = 4
+    outputFormats = ['XML', 'HTML']
+    timestampedReports = false
+    exportLineCoverage = true
+    timestampedReports = false
+    junit5PluginVersion = '0.15'
+    failWhenNoMutations = false
+    //mutators = ['ALL']
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
